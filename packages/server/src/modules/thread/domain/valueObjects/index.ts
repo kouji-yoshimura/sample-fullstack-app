@@ -1,0 +1,6 @@
+export * from "./postBody"
+export * from "./postId"
+export * from "./threadId"
+export * from "./threadName"
+export * from "./userId"
+export * from "./userName"

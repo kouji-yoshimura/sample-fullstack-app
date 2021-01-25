@@ -1,0 +1,6 @@
+modeel User {
+  userId    String   @id
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}

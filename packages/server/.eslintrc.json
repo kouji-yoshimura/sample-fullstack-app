@@ -1,0 +1,43 @@
+{
+    "env": {
+        "browser": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "project": ["./tsconfig.json", "@typescript-eslint/parser"]
+    },
+    "plugins": [
+        "jest",
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-console": "error",
+        "prefer-template": 1,
+        "max-len" : ["error", { "code": 120 }],
+        "prettier/prettier": ["error", {
+            "printWidth": 120,
+            "singleQuote": true
+        }],
+        "react/prop-types": 0,
+        "@typescript-eslint/no-empty-interface": 0
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}

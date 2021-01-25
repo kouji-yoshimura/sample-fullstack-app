@@ -1,0 +1,9 @@
+model Thread {
+  threadId  String     @id
+  nmae      String
+  posts     Post[]
+  createdBy String
+  updatedBy String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
